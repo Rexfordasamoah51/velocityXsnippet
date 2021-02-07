@@ -1,0 +1,147 @@
+{
+	"name": "velocityx",
+	"displayName": "VelocityX",
+	"description": "Flutter VelocityX snippect",
+	"version": "1.0.0",
+	"engines": {
+		"vscode": "^1.53.0"
+	},
+	"publisher": "rexthedev",
+	"bugs": {
+		"url": "https://github.com/Rexfordasamoah51/velocityXsnippet/issues",
+		"email": "rexfordasamoah51@gmail.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Rexfordasamoah51/velocityXsnippet"
+	},
+	"author": {
+		"name": "Rexford Asamoah"
+	},
+	"categories": [
+		"Snippets",
+		"Programming Languages"
+	],
+	"keywords": [
+		"dart",
+		"flutter",
+		"velocity_x",
+		"snippet"
+	],
+	"icon": "assets/logo.svg",
+	"activationEvents": [
+		"workspaceContains:**/pubspec.yaml"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"configuration": [
+			{
+				"title": "velocityx",
+				"properties": {
+					"velocityx.checkForUpdates": {
+						"type": "boolean",
+						"default": true,
+						"description": "Whether to check if you are using the latest package versions at startup."
+					}
+				}
+			}
+		],
+		"commands": [
+			{
+				"command": "extension.wrap-vstack",
+				"title": "VelocityX: New Vstack",
+				"icon": "assets/logo.svg"
+			},
+			{
+				"command": "extension.wrap-vstackscroll",
+				"title": "VelocityX: New Vstack Scroll"
+			},
+			{
+				"command": "extension.wrap-hstack",
+				"title": "VelocityX: New Hstack"
+			},
+			{
+				"command": "extension.wrap-hstackscroll",
+				"title": "VelocityX: New Hstack Scroll"
+			},
+			{
+				"command": "extension.wrap-vxdisclist",
+				"title": "VelocityX: New Disc List"
+			},
+			{
+				"command": "extension.wrap-vscrollvertical",
+				"title": "VelocityX: vertical scroll"
+			}
+		],
+		"menus": {
+			"commandPalette": [
+				{
+					"command": "extension.wrap-vstack",
+					"when": "editorLangId == dart"
+				},
+				{
+					"command": "extension.wrap-vstackscroll",
+					"when": "editorLangId == dart"
+				},
+				{
+					"command": "extension.wrap-hstack",
+					"when": "editorLangId == dart"
+				},
+				{
+					"command": "extension.wrap-hstackscroll",
+					"when": "editorLangId == dart"
+				},
+				{
+					"command": "extension.wrap-vxdisclist",
+					"when": "editorLangId == dart"
+				},
+				{
+					"command": "extension.wrap-vscrollvertical",
+					"when": "editorLangId == dart"
+				}
+			]
+		},
+		"snippets": [
+			{
+				"language": "dart",
+				"path": "./snippets/velocityx.json"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "webpack --mode production",
+		"webpack": "webpack --mode development",
+		"webpack-dev": "webpack --mode development --watch",
+		"test-compile": "tsc -p ./",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./"
+	},
+	"devDependencies": {
+		"@types/change-case": "^2.3.1",
+		"@types/glob": "^7.1.3",
+		"@types/js-yaml": "^3.12.1",
+		"@types/lodash": "^4.14.121",
+		"@types/mkdirp": "^0.5.2",
+		"@types/mocha": "^8.0.4",
+		"@types/node": "^12.11.7",
+		"@types/semver": "^7.3.4",
+		"@types/vscode": "^1.53.0",
+		"@typescript-eslint/eslint-plugin": "^4.14.1",
+		"@typescript-eslint/parser": "^4.14.1",
+		"eslint": "^7.19.0",
+		"glob": "^7.1.6",
+		"mocha": "^8.2.1",
+		"ts-loader": "^8.0.14",
+		"typescript": "^4.1.3",
+		"vscode-test": "^1.5.0",
+		"webpack": "^5.19.0",
+		"webpack-cli": "^4.4.0"
+	},
+	"dependencies": {
+		"change-case": "^3.1.0",
+		"js-yaml": "^3.13.1",
+		"lodash": "^4.17.19",
+		"mkdirp": "^0.5.1",
+		"semver": "^6.3.0"
+	}
+}

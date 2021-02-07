@@ -1,0 +1,60 @@
+{
+    "Vstack": {
+        "prefix": "vstack",
+        "body": [
+            "VStack(",
+            "\t[",
+            "\t\t${3:// TODO: Add up your widgets}",
+            "\t]",
+            ")"
+        ]
+    },
+    "VstackScroll": {
+        "prefix": "vstackscroll",
+        "body": [
+            "VStack(",
+            "\t[",
+            "\t\t${3:// TODO: Add up your widgets}",
+            "\t]",
+            ").scrollVertical()"
+        ]
+    },
+    "Hstack": {
+        "prefix": "hstack",
+        "body": [
+            "HStack(",
+            "\t[",
+            "\t\t${3:// TODO: Add up your widgets}",
+            "\t]",
+            ")"
+        ]
+    },
+    "HstackScroll": {
+        "prefix": "hstackscroll",
+        "body": [
+            "HStack(",
+            "\t[",
+            "\t\t${3:// TODO: Add up your widgets}",
+            "\t]",
+            ").scrollVertical()"
+        ]
+    },
+    "Zstack": {
+        "prefix": "zstack",
+        "body": [
+            "ZStack(",
+            "\t[",
+            "\t\t${3:// TODO: Add up your widgets}",
+            "\t]",
+            ")"
+        ]
+    },
+    "VxDiscList": {
+        "prefix": "vsdisclist",
+        "body": [
+            "VxDiscList([",
+            "\t\t${3:// TODO: Add up your widgets}",
+            "])"
+        ]
+    }
+}
