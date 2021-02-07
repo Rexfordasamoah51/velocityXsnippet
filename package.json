@@ -28,7 +28,7 @@
 		"velocity_x",
 		"snippet"
 	],
-	"icon": "assets/logo.svg",
+	"icon": "assets/logo.png",
 	"activationEvents": [
 		"workspaceContains:**/pubspec.yaml"
 	],
@@ -50,7 +50,7 @@
 			{
 				"command": "extension.wrap-vstack",
 				"title": "VelocityX: New Vstack",
-				"icon": "assets/logo.svg"
+				"icon": "assets/logo.png"
 			},
 			{
 				"command": "extension.wrap-vstackscroll",
